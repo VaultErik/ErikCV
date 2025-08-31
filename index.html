@@ -2,32 +2,31 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Erik | CV</title>
-<!-- Incluir Noto Sans desde Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 <style>
   /* Fondo de la página */
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: #a0b0c0;
+    font-family: sans-serif;
+    background-color: #a0b0c0; /* azul grisáceo de prueba */
     display: flex;
     justify-content: center;
     padding: 50px 0;
+    font-size: 16px !important; /* tamaño base fijo */
   }
 
   /* Caja principal */
   .caja-cv {
-    background-color: rgba(245, 245, 243, 0.95);
+    background-color: rgba(245, 245, 243, 0.95); /* blanco casi opaco */
     max-width: 700px;
     width: 75%;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     text-align: center;
+    font-size: 16px !important;
   }
 
   /* Avatar */
@@ -40,17 +39,18 @@
   /* Secciones */
   section {
     margin: 40px 0;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #ccc;
-  }
-
-  section h1, section h3, section p, section a {
-    margin-bottom: 15px;
+    padding-bottom: 20px;       /* espacio debajo del contenido */
+    border-bottom: 2px solid #ccc; /* línea separadora */
   }
 
   section:last-child {
-    border-bottom: none;
+    border-bottom: none; /* quitar línea en la última sección */
   }
+
+  section h1 { font-size: 32px !important; }
+  section h3 { font-size: 20px !important; }
+  section p  { font-size: 16px !important; }
+  .boton    { font-size: 16px !important; }
 
   /* Botones */
   .boton {
@@ -63,6 +63,7 @@
     border: 3px solid black;
     border-radius: 5px;
     font-weight: bold;
+    text-transform: none;
   }
 
   .boton img.icon {
@@ -75,29 +76,13 @@
   .caja-cv strong {
     display: block;
     margin-top: 15px;
-    font-size: 1.1em;
+    font-size: 18px !important;
   }
 
-  /* h1 más grande */
-  section h1 {
-    font-size: 2em;
-  }
-
-  /* Adaptación móvil */
-  @media screen and (max-width: 600px) {
-    .caja-cv {
-      width: 90%;
-      padding: 20px;
-    }
-    body {
-      font-size: 16px; /* Mantener tamaño de fuente base en móviles */
-    }
-    section h1 {
-      font-size: 1.8em;
-    }
-    section h3 {
-      font-size: 1.2em;
-    }
+  /* MEDIA QUERIES: ajustar layout sin reducir fuente */
+  @media (max-width: 600px) {
+    .caja-cv { width: 90%; padding: 20px; }
+    img.avatar { width: 120px; }
   }
 </style>
 </head>
@@ -129,7 +114,7 @@
 
     <h3>Puedes consultar este otro más "rolero":</h3>
     <a class="boton" href="https://drive.google.com/file/d/1bQzp5ls6o8kambdeZ-h-Rbv5oFqvs__Y/view?usp=sharing">
-      Ficha de personaje - Eriksen Nivel 35 <img class="icon" src="https://img.icons8.com/?size=100&id=Uv4CYobGW3fl&format=png&color=000000" alt="brocha" title="Ficha de personaje">
+      Ficha de personaje - Eriksen Nivel 35 <img class="icon" src="https://img.icons8.com/?size=100&id=Uv4CYobGW3fl&format=png&color=000000" alt="Icono brocha" title="Ficha de personaje">
     </a>
   </section>
 
@@ -139,7 +124,7 @@
 
     <h3>Website</h3>
     <a class="boton" href="https://eriksenwolf.notion.site/Eriksen-2584e3ab08e38031a458f5ffdce3c129?source=copy_link">
-      Mi presentación <img class="icon" src="https://img.icons8.com/?size=100&id=uVERmCBZZACL&format=png&color=000000" alt="Icono de presentación" title="Mi presentación">
+      Mi presentación <img class="icon" src="https://img.icons8.com/?size=100&id=uVERmCBZZACL&format=png&color=000000" alt="Icono presentación" title="Mi presentación">
     </a>
     <a class="boton" href="https://gaiasport.wordpress.com/">
       Gaia Sport <img class="icon" src="https://img.icons8.com/?size=100&id=eHpa7GwwofeH&format=png&color=000000" alt="Icono Wordpress" title="Gaia Sport">
@@ -158,7 +143,7 @@
 
     <h3>Presentaciones</h3>
     <a class="boton" href="https://drive.google.com/file/d/101EHWMXo-nvMO_DoTEM_VbkLYS8OswOY/view?usp=drive_link">
-      Centro de Estudios Mikeldi - "Identidad y Orientación" <img class="icon" src="https://img.icons8.com/?size=100&id=Is00tdUKRPwa&format=png&color=000000" alt="Icono género" title="Presentación CE Mikeldi">
+      Centro de Estudios Mikeldi - "Identidad y Orientación" <img class="icon" src="https://img.icons8.com/?size=100&id=Is00tdUKRPwa&format=png&color=000000" alt="Icono presentación" title="Presentación CE Mikeldi">
     </a>
 
     <h3>Proyectos propios</h3>
