@@ -52,8 +52,29 @@
   section h3 { font-size: 20px !important; }
   section p  { font-size: 16px !important; }
 
-  /* Botones redondos */
+  /* Botones generales */
   .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background: #fff;
+    color: black;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: none;
+    font-size: 16px !important;
+  }
+
+  .boton img.icon {
+    width: 24px;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+
+  /* Botones de contacto y redes redondos */
+  .boton-contacto {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -65,17 +86,16 @@
     text-decoration: none;
     border: 3px solid black;
     border-radius: 50%; /* círculo */
-    font-weight: bold;
-    font-size: 16px !important;
     transition: transform 0.2s ease, background-color 0.2s ease;
   }
 
-  .boton img.icon {
+  .boton-contacto img.icon {
     width: 24px;
     height: 24px;
+    margin: 0; /* quitar margen para centrar icono */
   }
 
-  .boton:hover {
+  .boton-contacto:hover {
     transform: scale(1.1);
   }
 
@@ -116,12 +136,12 @@
     <h1>Curriculum</h1>
     <h3>Soporte Informático & Mentor Digital</h3>
     <a class="boton" href="https://drive.google.com/file/d/1Kyd-QFbZjsYtSVP9IBP6KpEs51v1V8na/view?usp=sharing">
-      <img class="icon" src="https://img.icons8.com/?size=100&id=89871&format=png&color=000000" alt="Icono curriculum" title="Curriculum">
+      Curriculum <img class="icon" src="https://img.icons8.com/?size=100&id=89871&format=png&color=000000" alt="Icono curriculum" title="Curriculum">
     </a>
 
     <h3>Puedes consultar este otro más "rolero":</h3>
     <a class="boton" href="https://drive.google.com/file/d/1bQzp5ls6o8kambdeZ-h-Rbv5oFqvs__Y/view?usp=sharing">
-      <img class="icon" src="https://img.icons8.com/?size=100&id=Uv4CYobGW3fl&format=png&color=000000" alt="Icono brocha" title="Ficha de personaje">
+      Ficha de personaje - Eriksen Nivel 35 <img class="icon" src="https://img.icons8.com/?size=100&id=Uv4CYobGW3fl&format=png&color=000000" alt="Icono brocha" title="Ficha de personaje">
     </a>
   </section>
 
@@ -131,53 +151,63 @@
 
     <h3>Website</h3>
     <a class="boton" href="https://eriksenwolf.notion.site/Eriksen-2584e3ab08e38031a458f5ffdce3c129?source=copy_link">
-      <img class="icon" src="https://img.icons8.com/?size=100&id=uVERmCBZZACL&format=png&color=000000" alt="Icono presentación" title="Mi presentación">
+      Mi presentación <img class="icon" src="https://img.icons8.com/?size=100&id=uVERmCBZZACL&format=png&color=000000" alt="Icono presentación" title="Mi presentación">
     </a>
     <a class="boton" href="https://gaiasport.wordpress.com/">
-      <img class="icon" src="https://img.icons8.com/?size=100&id=eHpa7GwwofeH&format=png&color=000000" alt="Icono Wordpress" title="Gaia Sport">
+      Gaia Sport <img class="icon" src="https://img.icons8.com/?size=100&id=eHpa7GwwofeH&format=png&color=000000" alt="Icono Wordpress" title="Gaia Sport">
     </a>
 
     <h3>Mentor Digital</h3>
     <a class="boton" href="https://eriksenwolf.notion.site/Competencias-Digitales-A2-1d04e3ab08e3803bbb43dcaf8bb6ae5d?pvs=4">
-      <img class="icon" src="https://img.icons8.com/?size=100&id=uVERmCBZZACL&format=png&color=000000" alt="Icono Notion" title="Portfolio A2">
+      Portfolio A2 <img class="icon" src="https://img.icons8.com/?size=100&id=uVERmCBZZACL&format=png&color=000000" alt="Icono Notion" title="Portfolio A2">
     </a>
     <a class="boton" href="https://erikdiazfernandez.weebly.com/">
-      <img class="icon" src="https://img.icons8.com/?size=100&id=lAyQGYJI4GQn&format=png&color=000000" alt="Icono Weebly" title="Portfolio A2 (Weebly)">
+      Portfolio A2 (Weebly) <img class="icon" src="https://img.icons8.com/?size=100&id=lAyQGYJI4GQn&format=png&color=000000" alt="Icono Weebly" title="Portfolio A2 (Weebly)">
     </a>
     <a class="boton" href="https://eriksenwolf.notion.site/Competencias-Digitales-B1-Eduki-Digitalak-1d04e3ab08e380b38a9be644907de330?pvs=4">
-      <img class="icon" src="https://img.icons8.com/?size=100&id=uVERmCBZZACL&format=png&color=000000" alt="Icono Notion" title="Portfolio B1">
+      Portfolio B1 <img class="icon" src="https://img.icons8.com/?size=100&id=uVERmCBZZACL&format=png&color=000000" alt="Icono Notion" title="Portfolio B1">
     </a>
 
     <h3>Presentaciones</h3>
     <a class="boton" href="https://drive.google.com/file/d/101EHWMXo-nvMO_DoTEM_VbkLYS8OswOY/view?usp=drive_link">
-      <img class="icon" src="https://img.icons8.com/?size=100&id=Is00tdUKRPwa&format=png&color=000000" alt="Icono presentación" title="Presentación CE Mikeldi">
+      Centro de Estudios Mikeldi - "Identidad y Orientación" <img class="icon" src="https://img.icons8.com/?size=100&id=Is00tdUKRPwa&format=png&color=000000" alt="Icono presentación" title="Presentación CE Mikeldi">
     </a>
 
     <h3>Proyectos propios</h3>
     <a class="boton" href="https://drive.google.com/drive/folders/1acs9-mC4377HgwR3ft3O0Asa3tyPNqhX?usp=sharing">
-      <img class="icon" src="https://img.icons8.com/?size=100&id=P4eZS7zAfzRJ&format=png&color=000000" alt="Icono espada" title="Juego de mesa Proeza de Héroe">
+      Juego de mesa "Proeza de Héroe" (Pide permiso para ver muestra) <img class="icon" src="https://img.icons8.com/?size=100&id=P4eZS7zAfzRJ&format=png&color=000000" alt="Icono espada" title="Juego de mesa Proeza de Héroe">
     </a>
     <br>
     <a class="boton" href="https://drive.google.com/file/d/1KP7BjWtwZWDuf7meTWovI4XfT-3NGKbW/view?usp=sharing">
-      <img class="icon" src="https://img.icons8.com/?size=100&id=cnNtGti9W5zg&format=png&color=000000" alt="Icono libro" title="Mi libro">
+      Mi libro "Una ventana a mi corazón abierto" <img class="icon" src="https://img.icons8.com/?size=100&id=cnNtGti9W5zg&format=png&color=000000" alt="Icono libro" title="Mi libro">
     </a>
   </section>
 
   <!-- Sección Contacto -->
   <section id="contacto">
     <h1>Contacto</h1>
-    <a class="boton" href="mailto:info@eriksen.work" title="Correo electrónico">
+    <a class="boton-contacto" href="mailto:info@eriksen.work" title="Correo electrónico">
       <img class="icon" src="https://img.icons8.com/?size=100&id=i3XElI5CmcBP&format=png&color=000000" alt="Icono correo">
     </a>
-    <a class="boton" href="https://t.me/EriksenWork" title="Telegram">
+    <a class="boton-contacto" href="https://t.me/EriksenWork" title="Telegram">
       <img class="icon" src="https://img.icons8.com/?size=100&id=45163&format=png&color=000000" alt="Icono Telegram">
     </a>
-    <a class="boton" href="https://github.com/eriksenwolf/" title="GitHub">
+    <a class="boton-contacto" href="https://github.com/eriksenwolf/" title="GitHub">
       <img class="icon" src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="Icono GitHub">
     </a>
-    <a class="boton" href="https://www.youtube.com/@eriksenwork" title="YouTube">
+    <a class="boton-contacto" href="https://www.youtube.com/@eriksenwork" title="YouTube">
       <img class="icon" src="https://img.icons8.com/?size=100&id=37326&format=png&color=000000" alt="Icono YouTube">
     </a>
-    <a class="boton" href="http://linkedin.com/in/eriksenwork" title="LinkedIn">
+    <a class="boton-contacto" href="http://linkedin.com/in/eriksenwork" title="LinkedIn">
       <img class="icon" src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="Icono LinkedIn">
     </a>
+
+    <h3>Linktree</h3>
+    <a class="boton-contacto" href="https://linktr.ee/eriksen.work" title="Linktree">
+      <img class="icon" src="https://images.icon-icons.com/3912/PNG/512/linktree_logo_icon_247832.png" alt="Icono Linktree"/>
+    </a>
+  </section>
+</div>
+
+</body>
+</html>
