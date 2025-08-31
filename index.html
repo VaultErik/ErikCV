@@ -35,11 +35,20 @@
   }
 
   /* Secciones */
-  section {
-    margin: 40px 0;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #ccc; /* línea separadora gris clara */
-  }
+section {
+  margin: 40px 0;
+  padding-bottom: 20px;       /* espacio debajo del contenido */
+  border-bottom: 2px solid #ccc; /* línea separadora */
+}
+
+section h1, section h3, section p, section a {
+  margin-bottom: 15px; /* espacio interno entre elementos de la sección */
+}
+
+section:last-child {
+  border-bottom: none; /* quitar línea en la última sección */
+}
+
   section:last-child {
     border-bottom: none; /* quitar línea en la última sección */
   }
