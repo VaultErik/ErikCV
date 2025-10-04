@@ -30,6 +30,7 @@
     box-shadow: 0 4px 20px rgba(0,0,0,0.4);
     text-align: center;
     font-size: 16px !important;
+    position: relative; /* útil si quieres posicionar algo relativo a la caja */
   }
 
   /* Avatar */
@@ -52,7 +53,7 @@
 
   section h1 { font-size: 32px !important; }
   section h3 { font-size: 20px !important; }
-  section p  { font-size: 16px !important; }
+  section p  { font-size: 16px !important; text-align: left; }
 
   /* Botones generales */
   .boton {
@@ -108,28 +109,33 @@
     font-size: 18px !important;
   }
 
+  /* Footer MAScOTA dentro de la caja */
+  .caja-cv footer {
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  .caja-cv img.mascota {
+    width: 80px; /* tamaño pequeño */
+    max-width: 20%;
+    display: block;
+    margin: 12px auto 0;
+    opacity: 0.95;
+    border-radius: 50%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .caja-cv img.mascota:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
   /* MEDIA QUERIES */
   @media (max-width: 600px) {
     .caja-cv { width: 90%; padding: 20px; }
     img.avatar { width: 120px; }
+    .caja-cv img.mascota { width: 56px; }
   }
-
-  footer {
-  margin-top: 40px;
-  text-align: center;
-}
-
-footer img.mascota {
-  width: 80px; /* tamaño pequeño */
-  opacity: 0.9;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
-}
-
-footer img.mascota:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
 </style>
 </head>
 <body>
@@ -140,10 +146,10 @@ footer img.mascota:hover {
     <img class="avatar" src="./VaultErik_LOGO-nobg.png" alt="Avatar Vault·Erik" title="Avatar de Vault·Erik">
     <h1>Erik</h1>
     <h2>CREADOR DE CONTENIDO</h2>
+
+    <h2>Sobre mí</h2>
     <p>
       Gracias por dedicarme unos minutos de tu tiempo.<br>
-
-      <h2>Sobre mí</h2>
 
       <strong>Aprendizaje:</strong> Me interesan muchas cosas, y cada día busco aprender algo nuevo. 
       Me gusta que todo se haga con orden y claridad, documentar lo que hago para que quede constancia, y aportar lo mejor de mí en cualquier proyecto en el que me involucre.<br>
@@ -229,11 +235,13 @@ footer img.mascota:hover {
       <img class="icon" src="https://images.icon-icons.com/3912/PNG/512/linktree_logo_icon_247832.png" alt="Icono Linktree"/>
     </a>
   </section>
-</div>
 
-<footer>
-  <img class="mascota" src="./logo vaulterik halloween.png" alt="Avatar Halloween" title="Avatar Halloween">
-</footer>  
+  <!-- FOOTER de la caja (mascota) - ahora dentro de .caja-cv -->
+  <footer>
+    <!-- Recomendable cambiar el nombre del png -->
+    <img class="mascota" src="./logo vaulterik halloween.png" alt="Avatar Halloween" title="Avatar Halloween">
+  </footer>
+</div>
 
 </body>
 </html>
